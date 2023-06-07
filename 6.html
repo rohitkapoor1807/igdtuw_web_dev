@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Form</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+	<style type="text/css">
+		/*body{
+			background: url('gif_image.gif');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}*/
+		.form-class{
+			border: 1px solid #4d4d4da6;
+		    padding-bottom: 20px;
+		    padding-top: 20px;
+		    margin-top: 20px;
+		    border-radius: 10px;
+		    background: #fff;
+		    box-shadow: 3px 6px 10px #4c4a4a9e;
+		}
+		.video-class{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<video class="video-class">
+		<source src="video.mp4" type="video/mp4">
+	</video>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4 form-class">
+				<form>
+					<div class="row">
+						<div class="col-md-12">
+							<label>Name</label>
+							<input type="text" name="name" class="form-control" placeholder="Name">
+						</div>
+						<div class="col-md-12">
+							<label>Email</label>
+							<input type="email" name="email" class="form-control" placeholder="Email" required>
+						</div>
+						<div class="col-md-12">
+							<label>Mobile</label>
+							<input type="number" name="mobile" class="form-control" placeholder="Mobile">
+						</div>
+						<div class="col-md-12">
+							<label>Gender</label>
+							<select class="form-control" name="gender">
+								<option value="" selected disabled>Please Select</option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</div>
+						<div class="col-md-12">
+							<label>Address</label>
+							<textarea class="form-control" name="address" rows="3" placeholder="Address"></textarea>
+						</div>
+						<div class="col-md-12">
+							<label>Course</label>
+							<br>
+							<input type="radio" name="course" value="B.Tech"> B.Tech 
+							<input type="radio" name="course" value="M.Tech"> M.Tech 
+							<input type="radio" name="course" value="Ph.D"> Ph.D 
+						</div>
+						<div class="col-md-12">
+							<label>Hobbies</label>
+							<br>
+							<input type="checkbox" name="hobbies[]" value="Cricket"> Cricket 
+							<input type="checkbox" name="hobbies[]" value="Badminton"> Badminton 
+							<input type="checkbox" name="hobbies[]" value="Swimming"> Swimming 
+						</div>
+						<div class="col-md-12" style="margin-top: 20px;">
+							<button type="submit" class="btn btn-info form-control" name="submit_buttom">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
